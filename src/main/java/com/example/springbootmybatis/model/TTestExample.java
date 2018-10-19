@@ -233,6 +233,76 @@ public class TTestExample {
             addCriterion("name not between", value1, value2, "name");
             return (Criteria) this;
         }
+
+        public Criteria andDeftIsNull() {
+            addCriterion("deft is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andDeftIsNotNull() {
+            addCriterion("deft is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andDeftEqualTo(String value) {
+            addCriterion("deft =", value, "deft");
+            return (Criteria) this;
+        }
+
+        public Criteria andDeftNotEqualTo(String value) {
+            addCriterion("deft <>", value, "deft");
+            return (Criteria) this;
+        }
+
+        public Criteria andDeftGreaterThan(String value) {
+            addCriterion("deft >", value, "deft");
+            return (Criteria) this;
+        }
+
+        public Criteria andDeftGreaterThanOrEqualTo(String value) {
+            addCriterion("deft >=", value, "deft");
+            return (Criteria) this;
+        }
+
+        public Criteria andDeftLessThan(String value) {
+            addCriterion("deft <", value, "deft");
+            return (Criteria) this;
+        }
+
+        public Criteria andDeftLessThanOrEqualTo(String value) {
+            addCriterion("deft <=", value, "deft");
+            return (Criteria) this;
+        }
+
+        public Criteria andDeftLike(String value) {
+            addCriterion("deft like", value, "deft");
+            return (Criteria) this;
+        }
+
+        public Criteria andDeftNotLike(String value) {
+            addCriterion("deft not like", value, "deft");
+            return (Criteria) this;
+        }
+
+        public Criteria andDeftIn(List<String> values) {
+            addCriterion("deft in", values, "deft");
+            return (Criteria) this;
+        }
+
+        public Criteria andDeftNotIn(List<String> values) {
+            addCriterion("deft not in", values, "deft");
+            return (Criteria) this;
+        }
+
+        public Criteria andDeftBetween(String value1, String value2) {
+            addCriterion("deft between", value1, value2, "deft");
+            return (Criteria) this;
+        }
+
+        public Criteria andDeftNotBetween(String value1, String value2) {
+            addCriterion("deft not between", value1, value2, "deft");
+            return (Criteria) this;
+        }
     }
 
     public static class Criteria extends GeneratedCriteria {

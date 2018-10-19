@@ -34,4 +34,8 @@ public interface TTestMapper {
     int updateByPrimaryKey(TTest record);
 
     List<TTest> find();
+
+    List<TTest> findByName(@Param("name") String name);
+
+    List<TTest> findByNameAndDeft(@Param("name") String name, @Param("deft") String deft);
 }

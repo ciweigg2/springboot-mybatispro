@@ -18,17 +18,15 @@ import org.springframework.web.bind.annotation.RestController;
  * @desc
  */
 @RestController
-@RequestMapping("/testboot")
 public class TestBootController {
 
     @Autowired
     private TTestService tTestService;
 
-    @RequestMapping("getuser")
-    public String getUser() {
-        PageInfo<TTest> page =  tTestService.findByPage(2,10);
-        System.out.println(JSON.toJSONString(page));
-        return "oks";
+    @RequestMapping("/getList")
+    public String getUser(int page ,int pageSize) {
+        PageInfo<TTest> list =  tTestService.findByPage(page,pageSize);
+        return JSON.toJSONString(list);
     }
 
 }

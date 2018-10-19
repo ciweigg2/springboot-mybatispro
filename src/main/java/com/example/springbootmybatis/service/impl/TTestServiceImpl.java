@@ -21,13 +21,13 @@ public class TTestServiceImpl implements TTestService {
     @Autowired
     private TTestMapper tTestMapper;
 
-    public PageInfo<TTest> findwithPage(int page, int pageSize) {
-        PageHelper.startPage(page, pageSize);
-        return new PageInfo<>(tTestMapper.find());
-    }
-
     @Override
     public PageInfo<TTest> findByPage(int page, int pageSize) {
         return findwithPage(page ,pageSize);
+    }
+
+    public PageInfo<TTest> findwithPage(int page, int pageSize) {
+        PageHelper.startPage(page, pageSize);
+        return new PageInfo<>(tTestMapper.find());
     }
 }
