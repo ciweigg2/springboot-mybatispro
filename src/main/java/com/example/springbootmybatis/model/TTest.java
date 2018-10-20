@@ -14,7 +14,7 @@ public class TTest implements Serializable {
     /* 用户名*/
     private String name;
 
-    /* 用户数据ß*/
+    /* 用户数据*/
     private String deft;
 
     private static final long serialVersionUID = 1L;
