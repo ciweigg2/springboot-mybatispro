@@ -35,7 +35,12 @@ public interface TTestMapper {
 
     List<TTest> find();
 
+    List<TTest> findByDeftlike(@Param("likeDeft")String likeDeft);
+
     List<TTest> findByName(@Param("name") String name);
 
     List<TTest> findByNameAndDeft(@Param("name") String name, @Param("deft") String deft);
+
+    int insertList(@Param("list")List<TTest> list);
+
 }
